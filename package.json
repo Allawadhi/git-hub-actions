@@ -1,0 +1,23 @@
+{
+  "name": "git-hub-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allawadhi/git-hub-actions.git"
+  },
+  "author": "saurabh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allawadhi/git-hub-actions/issues"
+  },
+  "homepage": "https://github.com/Allawadhi/git-hub-actions#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.31.1"
+  }
+}
