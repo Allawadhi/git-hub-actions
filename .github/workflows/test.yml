@@ -1,6 +1,7 @@
 name: Create Pull Request Workflow
-on: pull_request
-types: [opened]
+on: 
+  pull_request:
+    types: opened
   
 jobs: 
       test:
