@@ -5,6 +5,6 @@ types: opened
 jobs: 
       test:
         runs-on: ubuntu-latest 
-            steps: 
-                - uses: actions/checkout@v2
-                - uses: ./
+        steps: 
+              - uses: actions/checkout@v2
+              - uses: ./
