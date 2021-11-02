@@ -19,9 +19,5 @@
   "homepage": "https://github.com/Allawadhi/git-hub-actions#readme",
   "dependencies": {
     "@vercel/ncc": "^0.31.1"
-  },
-  "devDependencies": {
-    "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0"
   }
 }

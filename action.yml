@@ -3,9 +3,8 @@ description: 'Say "Thank You" to a new pull request'
 author: 'Saurabh'
 
 inputs: 
-  GITHUB_TOKEN: 
-    description: 'Github token'
-    required: true 
+  description: 'Input'
+  required: true 
 
 runs:
   using: 'node12'
