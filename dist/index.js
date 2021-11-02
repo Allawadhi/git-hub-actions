@@ -8445,11 +8445,11 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__ (2186);
 const github = __nccwpck_require__ (5438);
 
-
 async function run(){
-    console.log('Hello, world!');
     const GITHUB_TOKEN = core.input ('GITHUB_TOKEN');
+
     const octokit = github.getOctokit(GITHUB_TOKEN);
+    
     const { context = {} } =github;
     const { pull_request } = context.payload;
 
