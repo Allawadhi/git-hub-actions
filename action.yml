@@ -1,11 +1,8 @@
 
 # descripton: 'Say "Thank You" to a new pull request'
-# author: 'Saurabh'
 
-# inputs: 
-# GITHUB_TOKEN: 
-# description: 'Github token'
-# required: true 
+
+
 # # TENOR_TOKEN:
 # # description: 'Tenor API token'
 # # required: true 
@@ -14,13 +11,20 @@
 # using: 'node12'
 # main: 'dist/index.js'
 
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
-inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
-    required: true
-    default: '1000'
+name: 'Create a pull request workflow'
+description: 'Say "Thank You" to a new pull request'
+author: 'Saurabh'
+
+inputs: 
+  GITHUB_TOKEN: 
+    description: 'Github token'
+    required: true 
+
+# inputs:
+#   milliseconds:  # id of input
+#     description: 'number of milliseconds to wait'
+#     required: true
+#     default: '1000'
 outputs:
   time: # output will be available to future steps
     description: 'The current time after waiting'
