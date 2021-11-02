@@ -7,8 +7,8 @@ inputs:
     description: 'Github token'
     required: true 
 
-outputs:
-  description: 'The current time after waiting'
+# outputs:
+#   description: 'The current time after waiting'
 
 runs:
   using: 'node12'
