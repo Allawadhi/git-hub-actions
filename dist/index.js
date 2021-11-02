@@ -8442,22 +8442,21 @@ module.exports = require("zlib");
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-const core = __nccwpck_require__ (2186);
-const github = __nccwpck_require__ (5438);
+const core = __nccwpck_require__(2186);
+const github = __nccwpck_require__(5438);
 
 async function run(){
-    const GITHUB_TOKEN = core.input ('GITHUB_TOKEN');
-
+    const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
     const octokit = github.getOctokit(GITHUB_TOKEN);
-    
-    const { context = {} } =github;
+
+    const { context = {} } = github;
     const { pull_request } = context.payload;
 
     await octokit.issues.createComment({
         ...context.repo,
         issue_number: pull_request.number,
-        body: 'Thank you for submitting a pull request!'
-    }); 
+        body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.'
+      });
 }
 run();
 })();
