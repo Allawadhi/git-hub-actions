@@ -2,8 +2,6 @@ name: Create Request Workflow
 on: 
   pull_request:
     types: opened
-    branches:
-      - feature
 jobs:
   build:
     runs-on: ubuntu-latest
