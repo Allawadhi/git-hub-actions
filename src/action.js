@@ -1,6 +1,5 @@
+
 async function run(){
-    console.log('Hello, world!');
-
-
+   console.log("Hello")
 }
 run();
