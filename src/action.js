@@ -1,5 +1,2 @@
-
-async function run(){
-   console.log("Hello")
-}
+async function run(){console.log("Hello")}
 run();
